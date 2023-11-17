@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+h1 {
+  color: rgb(242, 161, 190);
+  margin: 0px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: white;
+  height: 100px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header div {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+.big-logo {
+  height: 60vh;
+}
+
+header img {
+  width: 100%;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  margin: 0;
+  color: rgb(242, 161, 190);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textobild {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  border-bottom: 5px solid rgb(242, 161, 190);
+  color: rgb(242, 161, 190);
+  padding-bottom: 20px;
+}
+
+.textobild img {
+  border-radius: 50px;
+  max-height: 500px;
+  border: 15px;
+  border-style: solid;
+  display: block;
+}
+
+.intro {
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.introtext {
+  justify-content: flex-start;
+  color: black;
+}
+
+.projektdel {
+  padding: 20px;
+  border-bottom: 5px solid rgb(242, 161, 190);
+  padding-bottom: 50px;
+  margin: 20px;
+}
+
+.bilder {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  padding-top: 20px;
+}
+.projektruta {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.projektruta a {
+  border: 3px solid rgb(242, 161, 190);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.projektruta a:hover {
+  transition-duration: 0, 4s;
+  background-color: rgb(242, 161, 190);
+  color: white;
+}
+header div a {
+  justify-content: space-between;
+  color: rgb(242, 161, 190);
+  align-content: center;
+}
+.footer {
+  color: rgb(242, 161, 190);
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+}
