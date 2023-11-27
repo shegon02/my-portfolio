@@ -5,6 +5,7 @@ body {
   background-color: white;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  width: 100%;
 }
 h1 {
   color: rgb(242, 161, 190);
@@ -14,7 +15,7 @@ h1 {
 }
 header {
   background-color: white;
-  height: 100px;
+  height: 80px;
   margin: 0px;
   display: flex;
   justify-content: space-between;
@@ -28,9 +29,6 @@ header div {
   align-items: center;
   display: flex;
   gap: 40px;
-}
-.big-logo {
-  height: 60vh;
 }
 
 header img {
@@ -61,11 +59,12 @@ img {
 }
 
 .textobild img {
+  max-height: 700px;
   border-radius: 50px;
-  max-height: 500px;
   border: 15px;
   border-style: solid;
   display: block;
+  max-width: 300px;
 }
 
 .intro {
@@ -74,9 +73,16 @@ img {
   align-items: center;
 }
 
+.introbild {
+  min-width: 40%;
+  display: flex;
+  justify-content: right;
+}
+
 .introtext {
   justify-content: flex-start;
   color: black;
+  font-size: 24px;
 }
 
 .projektdel {
@@ -127,4 +133,80 @@ header div a {
   justify-content: center;
   display: flex;
   justify-content: space-around;
+}
+.Refurbish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  border-bottom: 5px solid rgb(242, 161, 190);
+  padding-bottom: 20px;
+}
+.Refurbish img {
+  max-width: 70%;
+  margin-left: auto;
+  display: block;
+}
+
+.Refurbish p {
+  font-size: 24px;
+}
+
+header a {
+  color: rgb(242, 161, 190);
+  margin: 0px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .bilder {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  p.introtext {
+    font-size: 16px;
+  }
+  a {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .textobild img {
+    border-radius: 4px;
+    border-width: 4px;
+  }
+  .header div {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .Refurbish {
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .Refurbish p {
+    font-size: 16px;
+  }
+  .Refurbish img {
+    max-width: 100%;
+  }
+  .introbild {
+    justify-content: center;
+  }
+  .textobild {
+    flex-direction: column;
+  }
 }
