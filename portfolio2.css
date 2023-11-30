@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: white;
   font-family: "Roboto", sans-serif;
   margin: 0;
   width: 100%;
@@ -14,7 +13,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  background-color: white;
+  background-color: #ffffff;
   height: 80px;
   margin: 0px;
   display: flex;
@@ -50,8 +49,6 @@ img {
 }
 .textobild {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 20px;
   border-bottom: 5px solid rgb(242, 161, 190);
   color: rgb(242, 161, 190);
@@ -72,31 +69,30 @@ img {
   align-content: center;
   align-items: center;
 }
+.intro p {
+  width: 80%;
+}
 
 .introbild {
   min-width: 40%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 .introtext {
-  justify-content: flex-start;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .projektdel {
   padding: 20px;
-  border-bottom: 5px solid rgb(242, 161, 190);
   padding-bottom: 50px;
   margin: 20px;
 }
 
 .bilder {
   flex-direction: row;
-  justify-content: space-between;
   gap: 50px;
-  align-content: center;
   max-width: 100%;
   max-height: 100%;
   display: flex;
@@ -133,23 +129,20 @@ header div a {
   justify-content: center;
   display: flex;
   justify-content: space-around;
+  border-top: 5px solid rgb(242, 161, 190);
 }
 .Refurbish {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
-  border-bottom: 5px solid rgb(242, 161, 190);
-  padding-bottom: 20px;
+  justify-content: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-width: 60%;
 }
-.Refurbish img {
-  max-width: 70%;
-  margin-left: auto;
-  display: block;
-}
-
 .Refurbish p {
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 0px;
 }
 
 header a {
@@ -159,6 +152,21 @@ header a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   text-decoration: none;
+  font-weight: bold;
+}
+h3 {
+  color: rgb(242, 161, 190);
+  font-size: 18px;
+}
+.mockup {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  overflow-x: scroll;
+}
+.mockup img {
+  max-width: 1080px;
 }
 
 @media screen and (max-width: 600px) {
@@ -196,17 +204,21 @@ header a {
     flex-direction: column;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    min-width: 80%;
   }
   .Refurbish p {
     font-size: 16px;
-  }
-  .Refurbish img {
-    max-width: 100%;
   }
   .introbild {
     justify-content: center;
   }
   .textobild {
     flex-direction: column;
+  }
+  header a {
+    padding-bottom: 0px;
+  }
+  .intro p {
+    width: 100%;
   }
 }
